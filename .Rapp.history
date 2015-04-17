@@ -1,0 +1,297 @@
+airquality[good][1:6,]
+airquality[good][1:5,]
+airquality[good,][1:5,]
+x<-list(ant=1:5,art=-1:-5,raid=25:28)
+x$a
+x$art
+x$r
+x$n
+x<-list(aardvark=1:5,raid=25:28,wind=90:101,window=8:12)
+x$w
+x[["w"]]
+x[["w",exact=FALSE]]
+x[["wIND"]]
+x[["wind"]]
+x<-matrix(1:6,2,3)
+x
+x[1,2]
+x[1,]
+x[,2]
+x<-matrix(1:4,2,2);y<-matrix(rep(10,4)2,2)
+x<-matrix(1:4,2,2);y<-matrix(rep(10,4),2,2)
+x
+y
+x*y
+x.y
+x/y
+x%*%y
+z=matrix(10:20,2,5)
+z=matrix(10:21,2,5)
+z=matrix(10:21,2,6)
+z
+x*z
+x%*%z
+x<-c("a","b","c","c","d","a")
+x[1]
+x>"a"
+x[x>:"a"]
+x[x>"a"]
+x$a
+x<-list(foo=1:4,bar=0.6)
+x$f
+x$r
+x<-list(a=list(10,12,14),b=c(3.14,2.81))
+x
+x[[1]][3]
+x[[1]]
+x[[c(2,1)]]
+x[[b]]
+x[b]
+x$b
+x$b(1)
+x$b[1]
+x[[2]][1]
+x[1,]
+x[[1]]
+x[[1,]]
+x[[]]
+x[[1]][3][1]
+x[[1]][3][1][1]
+x[[1]][3][1][3]
+x[[1]][3][0]
+x[[1]][3][2]
+x<-(T,F)
+x<-c(T,F)
+x
+x<-9:20
+x
+directory=getwd()
+source("complete.R")
+source("corr.R")
+corr(directory,150)
+temp = list.files(path=directory,pattern="*.csv")#
+	dat = do.call(rbind,lapply(temp,function(x) read.csv(x)))#
+	tz <-complete(directory,1:332)#
+	dz<-tz[tz$nobs>threshold,"id"]#
+	gat <-complete.cases(dat)
+threshold=150
+dz<-tz[tz$nobs>threshold,"id"]#
+	gat <-complete.cases(dat)
+for(f in dz) {#
+		gex <-dat[gat==TRUE,][dat$ID==f,"sulfate"]#
+		gey <-dat[gat==TRUE,][dat$ID==f,"nitrate"]#
+		tx<-c(tx,gex)#
+		ty<-c(ty,gey)#
+		cc<-c(cor(gex,gey,use="complete.obs"),cc)#
+	}
+tx=list();ty=list();cc=list()#
+	for(f in dz) {#
+		gex <-dat[gat==TRUE,][dat$ID==f,"sulfate"]#
+		gey <-dat[gat==TRUE,][dat$ID==f,"nitrate"]#
+		tx<-c(tx,gex)#
+		ty<-c(ty,gey)#
+		cc<-c(cor(gex,gey,use="complete.obs"),cc)#
+	}
+length(gex)
+length(gey)
+dim(cc)
+length(cc)
+summary(cc)
+length(tex)
+length(tx)
+length(ty)
+gex
+gey
+head(cc)
+dc<-cor(as.numeric(gex),as.numeric(gey),use="complete.obs")
+length(dx)
+length(dz)
+dz[234:]
+dz[234]
+f
+f in dz
+is(f,dz)
+is(f in dz)
+f in dz
+length(tx)
+length(cc)
+tx=list();ty=list();cc=list()#
+	for(f in dz) {#
+		gex <-dat[gat==TRUE,][dat$ID==f,"sulfate"]#
+		gey <-dat[gat==TRUE,][dat$ID==f,"nitrate"]#
+		tx<-c(tx,gex)#
+		ty<-c(ty,gey)#
+		cc<-c(cor(as.numeric(gex),as.numeric(gey),use="complete.obs"),cc)#
+	}
+length(cc)
+cc
+tx=list();ty=list();cc=list()#
+	for(f in dz) {#
+		gex <-dat[gat==TRUE,][dat$ID==f,"sulfate"]#
+		gey <-dat[gat==TRUE,][dat$ID==f,"nitrate"]#
+		tx<-c(tx,gex)#
+		ty<-c(ty,gey)#
+		cc<-c(cor(as.numeric(gex),as.numeric(gey)),cc)#
+	}
+length(cc)
+length(dz)
+summary(cc)
+length(gex)
+length(gey)
+head(cc)
+class(tx)
+class(gex)
+class(cc)
+tx=list();ty=list();cc=list()#
+	for(f in dz) {#
+		gex <-dat[gat==TRUE,][dat$ID==f,"sulfate"]#
+		gey <-dat[gat==TRUE,][dat$ID==f,"nitrate"]#
+		#tx<-c(tx,gex)#
+		#ty<-c(ty,gey)#
+		cc<-c(cor(as.vector(gex),as.vector(gey),use="complete.obs"),cc)#
+	}#
+	print(as.vector(cc))
+class(cc)
+as.vector(cc)
+z<-as.vector(cc)
+class(z)
+?vector
+class(cc[1])
+class(cc[[1]])
+class(as.vector(gex))
+class(gex)
+gex[1:10]
+gat <-subset(dat,!is.na(sulfate)&!is.na(nitrate))
+length(gat)
+dim(gat)
+head(gat)
+hat<-gat[2]
+head(hat)
+hat<-gat[2][gat$id=21]
+hat<-gat[2][gat$id==21]
+head(hat)
+hat
+hat<-gat[2][gat$id==21,]
+head(hat)
+length(hat)
+hat
+hat<-gat[gat$id==21,2]
+length(hat)
+hat
+at<-gat[gat$id==21,2]
+length(at)
+at<-gat[gat$id==1,2]
+length(at)
+at<-gat[gat$id==1,]
+length(at)
+head(at)
+at
+at<-gat[,gat$id==1]
+at
+at<-gat[2]
+length(at)
+head(at)
+head(dat)
+head(gat)
+head(gat[2:4])
+head(gat[2,4])
+head(gat[2][4])
+head(gat[2]gat[4])
+m<-(gat[2],gat[4])
+m<-c(gat[2],gat[4])
+m[1:30]
+cor(gat[2],gat[3])
+cor(as.vector(gat[2]),as.vector(gat[3]))
+class(gat[2])
+hu<-gat[gat$ID==1,2]
+length(hu)
+class(hu)
+head(hu)
+source("pollutantmean.R")
+source("pollutantmean.R")
+pollutantmean(directory)
+pollutantmean(directory,"sulfate",id=1:10)
+subset(dat,dat$ID==1:10)
+?subset
+y<-subset(dat,"sulfate")
+subset(dat,dat$ID=1:10)
+bv<-subset(dat,dat$ID==1:10,dat$sulfate)
+bv<-subset(dat,dat$ID==1:10,select=sulfate)
+bv
+bv<-subset(dat,dat$ID==1:10,select=sulfate)
+length(bv)
+dim(bv)
+class(bv)
+mean(bv)
+s<-as.matrix(bv)
+class(s)
+mean(s)
+mean(s,na.rm=TRUE)
+pollutant="sulfate"
+bg<-subset(dat,select=pollutant)
+length(bg)
+dim(b)
+dim(bg)
+source("pollutantmean2.R")
+source("pollutantmean2.R")
+pollutantmean2(directory,"sulfate",1:10)
+cz<-subset(dat,dat$ID==id & !is.na(sulfate),select=pollutant)
+cz<-subset(dat,dat$ID==1:10 & !is.na(sulfate),select=pollutant)
+ez<-mean(as.matrix(cz),na.rm=TRUE)
+print(ez)
+ci <- cbind(c("a", "b", "a"), c("A", "C", "B"))
+ci
+source("corr.R")
+corr(directory)
+dim(dz)
+length(dz)
+tx=list();ty=list();cc=vector(length=length(dz))#
+	for(f in dz) {#
+		gex <-gat[gat$ID==f,2]#
+		gey <-gat[gat$ID==f,3]#
+		#tx<-c(tx,gex)#
+		#ty<-c(ty,gey)#
+		cc<-c(cor(as.vector(gex),as.vector(gey),use="complete.obs"),cc)#
+	}
+cc
+summary(cc)
+threshold
+length(cc)
+length(dz)
+length(getx)
+length(gex)
+gex[1:10]
+length(gey)
+gey[1:10]
+class(gey)
+head(cc)
+dz
+head(tz)
+source("corr.R")
+corr(directory,400)
+head(cc)
+cr<-corr(directory,400)
+head(cr)
+summary(cr)
+cr<-corr(directory,400)
+source("corr.R")
+cr<-corr(directory,400)
+head(cr)
+summary(cr)
+cr<-corr(directory,5000)
+summary(cr)
+length(cr)
+cr<-corr(directory)
+summary(cr)
+length(cr)
+source("pollutantmean")
+source("pollutantmean.R")
+pollutantmean(directory,"sulfate",1:10)
+pollutantmean(directory,"nitrate",70:72)
+pollutantmean(directory,"nitrate",23)
+source("pollutantmean.R")
+pollutantmean(directory,"nitrate",23)
+source("pollutantmean.R")
+pollutantmean(directory,"nitrate",23)
+pollutantmean(directory,"nitrate",70:72)
+pollutantmean(directory,"sulfate",1:10)
