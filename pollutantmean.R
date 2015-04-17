@@ -1,4 +1,3 @@
-#Function to calculate mean of pollutants
 pollutantmean <- function(directory,pollutant="sulfate",id=1:332){
 	temp = list.files(path=directory,pattern="*.csv")
 	dat = do.call(rbind,lapply(temp,function(x) read.csv(x)))
